@@ -5,6 +5,7 @@ otp_release:
 
 script:
   - ./erlang-nodenames.sh
+  - env RABBITMQ_NODENAME=rabbit ./erlang-nodenames.sh
 
 cache:
   apt: true
