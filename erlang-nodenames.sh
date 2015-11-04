@@ -45,3 +45,8 @@ erl -A0 -noinput -boot start_clean -eval \
     'net_kernel:start([rabbit, longnames]),
      io:format("~s~n", [node()]),
      halt().'
+
+HOSTNAME=`env hostname`
+NODENAME=rabbit@${HOSTNAME%%.*}
+echo $NODENAME
+echo
