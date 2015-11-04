@@ -6,6 +6,11 @@ set -x
 set | sort
 echo
 
+if test -f /etc/rabbitmq/rabbitmq-env.conf; then
+    cat /etc/rabbitmq/rabbitmq-env.conf
+    echo
+fi
+
 hostname
 echo
 
