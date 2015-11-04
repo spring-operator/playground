@@ -5,3 +5,6 @@ otp_release:
 
 script:
   - ./erlang-nodenames.sh
+
+cache:
+  apt: true
