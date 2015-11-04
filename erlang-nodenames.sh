@@ -3,6 +3,9 @@
 
 set -x
 
+set | sort
+echo
+
 hostname
 
 hostname -s
