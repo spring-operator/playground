@@ -8,8 +8,8 @@ before_script:
   - git remote -v
   - git branch -avv
   - git tag
-  - "echo ${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
-  - "git checkout -B ${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
+  - echo "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
+  - git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
 
 script:
   - git branch -vv
