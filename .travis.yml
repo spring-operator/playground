@@ -5,14 +5,11 @@ otp_release:
 
 before_script:
   - "env | sort"
-  - git remote -v
-  - git branch -avv
-  - git tag
-  - echo "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
   - git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
+  - git rev-parse --verify -q master -- || git branch master
 
 script:
-  - git branch -vv
+  - git log --oneline --graph --decorate --all
   - make
 
 cache:
