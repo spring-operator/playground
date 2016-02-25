@@ -12,7 +12,7 @@ before_script:
   - git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
 
 script:
-  - git branch -vv
+  - git log --oneline --graph --decorate --all
   - make
 
 cache:
