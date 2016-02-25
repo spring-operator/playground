@@ -15,8 +15,6 @@ script:
   - git show-ref HEAD
   - git branch -vv
   - make
-  - : ./erlang-nodenames.sh
-  - : env RABBITMQ_NODENAME=rabbit ./erlang-nodenames.sh
 
 cache:
   apt: true
