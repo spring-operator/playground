@@ -5,14 +5,12 @@ otp_release:
 
 before_script:
   - echo "TRAVIS_TAG=$TRAVIS_TAG TRAVIS_BRANCH=$TRAVIS_BRANCH"
-  - git show-ref HEAD
   - git remote -v
   - git branch -avv
   - git tag
   - (test "$TRAVIS_TAG" && git checkout "$TRAVIS_TAG") || (test "$TRAVIS_BRANCH" && git checkout -b "$TRAVIS_BRANCH")
 
 script:
-  - git show-ref HEAD
   - git branch -vv
   - make
 
