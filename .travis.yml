@@ -6,7 +6,7 @@ otp_release:
 before_script:
   - "env | sort"
   - git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
-  - git rev-parse master -- 2>/dev/null || git branch master
+  - git rev-parse --verify -q master -- || git branch master
 
 script:
   - git log --oneline --graph --decorate --all
