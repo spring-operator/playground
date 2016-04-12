@@ -2,6 +2,8 @@
 
 set -ex
 
+git clone playground updated-playground
+
 pushd playground
   echo "quack" >> commentary.txt
   git config --global user.email "dummy@rabbitmq.com"
