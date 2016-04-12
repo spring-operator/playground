@@ -4,6 +4,7 @@ inputs:
 - name: playground
 outputs:
 - name: updated-playground
+- path: playground
 image_resource:
   type: docker-image
   source:
