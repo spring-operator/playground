@@ -1,7 +1,7 @@
 ---
 platform: linux
 inputs:
-- name: updated-playground
+- name: playground
 outputs:
 - name: updated-playground
 image_resource:
