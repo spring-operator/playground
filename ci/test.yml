@@ -2,9 +2,9 @@
 platform: linux
 inputs:
 - name: playground
-- name: rabbitmq-ci-image
-outputs:
-- name: updated-playground
-image: rabbitmq-ci-image
+image_resource:
+  type: docker-image
+  source:
+    repository: pivotalrabbitmq/ci
 run:
   path: playground/ci/test.sh
