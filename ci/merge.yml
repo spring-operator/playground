@@ -1,9 +1,9 @@
 ---
 platform: linux
 inputs:
-- name: playground
-outputs:
 - name: updated-playground
+outputs:
+- name: merged-playground
 image_resource:
   type: docker-image
   source:

@@ -2,7 +2,9 @@
 
 set -ex
 
-pushd updated-playground
+git clone updated-playground merged-playground
+
+pushd merged-playground
   git config --global user.email "dummy@rabbitmq.com"
   git config --global user.name "RabbitMQ CI"
   git co stable
