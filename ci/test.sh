@@ -2,6 +2,8 @@
 
 set -ex
 
-pushd playground
-  git diff stable
+pushd playground-pr
+  echo "egad, a pull request!"
 popd
+
+exit 0
