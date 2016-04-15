@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 set -ex
 
-pushd playground-pr
+(
+  cd playground-pr
   echo "egad, a pull request!"
-popd
+)
 
 exit 0
