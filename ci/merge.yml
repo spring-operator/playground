@@ -9,4 +9,4 @@ image_resource:
   source:
     repository: pivotalrabbitmq/ci
 run:
-  path: merged-playground/ci/merge.sh
+  path: playground/ci/merge.sh
