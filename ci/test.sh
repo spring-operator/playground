@@ -3,8 +3,8 @@
 set -ex
 
 (
-  cd playground-pr
-  echo "egad, a pull request!"
+  cd playground
+  echo "egad, a new commit!"
 )
 
 exit 0
