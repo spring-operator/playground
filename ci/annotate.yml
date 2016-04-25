@@ -7,4 +7,4 @@ image_resource:
   source:
     repository: pivotalrabbitmq/ci
 run:
-  path: playground/ci/merge.sh
+  path: playground/ci/annotate.sh
