@@ -2,9 +2,6 @@
 
 set -ex
 
-echo `pwd`
-echo `ls -laF`
-
 cp -r $1 playground
 
 (
