@@ -6,3 +6,5 @@ Let's try to plug Travis CI into pull requests.
 
 UPDATE: This is now a test-bed for Concourse activity. This update is
 itself a test of said Concourse activity.
+
+UPDATE AGAIN: This is also a message for testing Concourse activity.
