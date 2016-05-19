@@ -7,5 +7,4 @@ image_resource:
   source:
     repository: pivotalrabbitmq/ci
 run:
-  path: playground-master/ci/test.sh
-  args: ["playground"]
+  path: playground/ci/test.sh
