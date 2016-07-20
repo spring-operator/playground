@@ -5,12 +5,12 @@ sudo: false
 addons:
   apt:
     packages:
-    - gettext
-    - libcurl4-openssl-dev
-    - libicu-dev
-    - libssl-dev
-    - libunwind8
-    - zlib1g
+    #- gettext
+    #- libcurl4-openssl-dev
+    #- libicu-dev
+    #- libssl-dev
+    - libunwind7
+    #- zlib1g
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "latest" --install-dir "$DOTNET_INSTALL_DIR"
