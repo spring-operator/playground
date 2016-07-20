@@ -12,14 +12,14 @@ addons:
     #- libunwind8
     #- zlib1g
 install:
-  - apt-cache search libunwind
-  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
-  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "latest" --install-dir "$DOTNET_INSTALL_DIR"
-  - export PATH="$DOTNET_INSTALL_DIR:$PATH"
+  #- apt-cache search libunwind
+  #- export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
+  #- curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "latest" --install-dir "$DOTNET_INSTALL_DIR"
+  #- export PATH="$DOTNET_INSTALL_DIR:$PATH"
 
 before_script:
   - "env | sort"
-  - dotnet --version
+  #- dotnet --version
   - |
     git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
     git remote add upstream https://github.com/$TRAVIS_REPO_SLUG.git
@@ -28,7 +28,7 @@ before_script:
 
 script:
   - git log --oneline --graph --decorate --all
-  - make
+  #- make
 
 cache:
   apt: true
