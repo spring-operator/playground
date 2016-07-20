@@ -9,7 +9,7 @@ addons:
     #- libcurl4-openssl-dev
     #- libicu-dev
     #- libssl-dev
-    - libunwind7
+    - libunwind8
     #- zlib1g
 install:
   - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
