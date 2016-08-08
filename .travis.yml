@@ -20,11 +20,11 @@ install:
 
 before_script:
   - "env | sort"
-  - ls -l $HOME
-  - ls -l $HOME/otp
-  - source $HOME/otp/19.0/activate
+    #- curl -O https://raw.githubusercontent.com/kerl/kerl/master/kerl && chmod 755 kerl
+    #- ls -l $HOME/otp
+    #- source $HOME/otp/19.0/activate
   - erl -version
-  #- dotnet --version
+  - which erl
   - |
     git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
     git remote add upstream https://github.com/$TRAVIS_REPO_SLUG.git
