@@ -1,3 +1,5 @@
+# vim:sw=2:et:
+
 sudo: false
 language: java
 #language: erlang
@@ -5,7 +7,11 @@ language: java
 #  - "18.0"
 addons:
   apt:
+    sources:
+      - sourceline: deb https://packages.erlang-solutions.com/ubuntu precise contrib
+        key_url: https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
     packages:
+      - esl-erlang
     #- gettext
     #- libcurl4-openssl-dev
     #- libicu-dev
@@ -20,10 +26,6 @@ install:
 
 before_script:
   - "env | sort"
-  - wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
-  - sudo dpkg -i ./erlang-solutions_1.0_all.deb
-  - sudo apt-get -qq update
-  - sudo apt-get -y install esl-erlang
   - |
     git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
     git remote add upstream https://github.com/$TRAVIS_REPO_SLUG.git
