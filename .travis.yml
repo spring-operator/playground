@@ -20,10 +20,10 @@ install:
 
 before_script:
   - "env | sort"
+  - apt-cache search erlang
   - erl -version
-  - ls /usr/lib/erlang/releases
-  - mkdir ~/bin && curl -O https://raw.githubusercontent.com/kerl/kerl/master/kerl -o ~/bin/kern && chmod 755 ~/bin/kerl
-  - kerl list releases
+    #- mkdir ~/bin && curl -O https://raw.githubusercontent.com/kerl/kerl/master/kerl -o ~/bin/kerl && chmod 755 ~/bin/kerl
+    #- kerl list releases
   - |
     git checkout -B "${TRAVIS_TAG:-${TRAVIS_BRANCH}}"
     git remote add upstream https://github.com/$TRAVIS_REPO_SLUG.git
