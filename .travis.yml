@@ -1,4 +1,5 @@
 sudo: false
+language: java
 #language: erlang
 #otp_release:
 #  - "18.0"
@@ -12,6 +13,8 @@ addons:
     #- libunwind8
     #- zlib1g
 install:
+  - kerl list installations
+  - erl -version
   #- apt-cache search libunwind
   #- export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
   #- curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "latest" --install-dir "$DOTNET_INSTALL_DIR"
