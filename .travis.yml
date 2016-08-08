@@ -20,7 +20,7 @@ install:
 
 before_script:
   - "env | sort"
-  - apt-cache search erlang
+  - apt-cache policy erlang
   - erl -version
     #- mkdir ~/bin && curl -O https://raw.githubusercontent.com/kerl/kerl/master/kerl -o ~/bin/kerl && chmod 755 ~/bin/kerl
     #- kerl list releases
