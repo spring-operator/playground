@@ -31,6 +31,8 @@ before_script:
   - apt-cache policy make
 
 script:
+  - elixir --version
+  - mix --version
   - mix local.hex --force
   #- git log --oneline --graph --decorate --all
   #- make
