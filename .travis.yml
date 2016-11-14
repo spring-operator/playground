@@ -1,5 +1,7 @@
 # vim:sw=2:et:
 
+dist: trusty
+group: beta
 sudo: false
 #language: java
 language: erlang
