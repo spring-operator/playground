@@ -29,6 +29,8 @@ before_script:
   - erl -version
   - make --version
   - apt-cache policy make
+  - 'dpkg -l | grep elixir'
+  - 'dpkg -l | grep mix'
 
 script:
   - elixir --version
