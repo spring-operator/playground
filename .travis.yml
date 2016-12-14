@@ -38,7 +38,9 @@ before_script:
   #- apt-cache policy elixir
 
 script:
-  - ifconfig
+  - ls -l ~/.config/rebar3
+  - cat ~/.config/rebar3/rebar.config
+  - rebar3 plugins list
   #- kiex install 1.3.4
   #- kiex list
   #- kiex default 1.3.4
