@@ -7,4 +7,4 @@ inputs:
   - name: playground
 
 run:
-  path: playground/plugin-tests.sh
+  path: playground/make.sh
