@@ -8,4 +8,4 @@ tar -cvf - \
 	amqp_client \
 	rabbit \
 	"$@" \
-	| xz > PACKAGES/bundle-"$(cat version/version)".tar.xz
+	| gzip > PACKAGES/bundle-"$(cat version/version)".tar.gz
