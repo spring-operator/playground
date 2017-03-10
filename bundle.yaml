@@ -5,9 +5,8 @@ platform: linux
 inputs:
   - name: rabbitmq-ci
     path: ci
-  - name: rabbitmq-server-release
-    path: rabbitmq_server_release
   - name: version
+  - name: playground
 
   - name: rabbitmq-codegen
     path: rabbitmq_codegen
@@ -73,7 +72,7 @@ outputs:
   - name: PACKAGES
 
 run:
-  path: playgroung/bundle.sh
+  path: playground/bundle.sh
   args:
     - rabbitmq_amqp1_0
     - rabbitmq_auth_backend_ldap

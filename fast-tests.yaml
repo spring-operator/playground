@@ -1,0 +1,10 @@
+# vim:sw=2:et:
+
+platform: linux
+
+inputs:
+  - name: s3
+  - name: playground
+
+run:
+  path: playground/fast-tests.sh
