@@ -31,9 +31,9 @@ inputs:
     path: rabbitmq_auth_backend_ldap
   - name: rabbitmq-auth-mechanism-ssl
     path: rabbitmq_auth_mechanism_ssl
-  - name: rabbitmq-auth-mechanism-ssl
-    path: rabbitmq-clusterer
-  - name: rabbitmq_clusterer
+  - name: rabbitmq-clusterer
+    path: rabbitmq_clusterer
+  - name: rabbitmq-consistent-hash-exchange
     path: rabbitmq_consistent_hash_exchange
   - name: rabbitmq-event-exchange
     path: rabbitmq_event_exchange
