@@ -5,6 +5,8 @@ platform: linux
 inputs:
   - name: rabbitmq-ci
     path: ci
+  - name: rabbitmq-server-release
+    path: rabbitmq_server_release
   - name: version
 
   - name: rabbitmq-codegen
@@ -13,6 +15,8 @@ inputs:
     path: rabbit_common
   - name: rabbitmq-erlang-client
     path: amqp_client
+  - name: rabbitmq-cli
+    path: rabbitmq_cli
   - name: rabbitmq-server
     path: rabbit
 
@@ -48,8 +52,6 @@ inputs:
     path: rabbitmq_management_agent
   - name: rabbitmq-management
     path: rabbitmq_management
-  - name: rabbitmq-management-visualiser
-    path: rabbitmq_management_visualiser
   - name: rabbitmq-federation-management
     path: rabbitmq_federation_management
   - name: rabbitmq-shovel-management
@@ -58,6 +60,10 @@ inputs:
     path: rabbitmq_top
   - name: rabbitmq-tracing
     path: rabbitmq_tracing
+  - name: rabbitmq-web-mqtt
+    path: rabbitmq_web_mqtt
+  - name: rabbitmq-web-mqtt-examples
+    path: rabbitmq_web_mqtt_examples
   - name: rabbitmq-web-stomp
     path: rabbitmq_web_stomp
   - name: rabbitmq-web-stomp-examples
@@ -85,10 +91,11 @@ run:
     - rabbitmq_web_dispatch
     - rabbitmq_management_agent
     - rabbitmq_management
-    - rabbitmq_management_visualiser
     - rabbitmq_federation_management
     - rabbitmq_shovel_management
     - rabbitmq_top
     - rabbitmq_tracing
+    - rabbitmq_web_mqtt
+    - rabbitmq_web_mqtt_examples
     - rabbitmq_web_stomp
     - rabbitmq_web_stomp_examples
