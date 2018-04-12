@@ -54,3 +54,10 @@ script:
 
 cache:
   apt: true
+
+notifications:
+  email:
+    recipients:
+      - alerts@rabbitmq.com
+    on_success: always
+    on_failure: always
